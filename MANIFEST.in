@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include fcmapi/templates/index.html
+include fcmapi/templates/maplogin.html
+include fcmapi/templates/session.html
+include fcmapi/templates/missing.html
+include fcmapi/templates/webcli.html
+include fcmapi/templates/webgui.html
+include fcmapi/templates/d3.v4.min.js
