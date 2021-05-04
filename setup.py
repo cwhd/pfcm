@@ -5,7 +5,7 @@ setup(name='fcmlib',
       description='Open Fuzzy Cognitive Maps Library',
       url='https://github.com/mpuheim/PyOpenFCM',
       author='M.Puheim',
-      author_email='puheim@gmail.com',
+      author_email='davis.christopher.w@gmail.com',
       license='GPL 3.0',
       package_dir={
             'fcmlib': 'fcmlib',

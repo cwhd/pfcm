@@ -42,7 +42,7 @@ while True:
     #update FCM by propagating signals via relations
     map.update()
     #save FCM to file as JSON
-    map.save("../maps/example.json")
+        
     #load FCM from file as JSON
     map=FCM("../maps/example.json")
     #press enter to repeat (CTRL+C to exit)

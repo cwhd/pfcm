@@ -9,3 +9,8 @@ pip install git+https://github.com/jsonpickle/jsonpickle.git
 pip install jsonpickle
 pip install .
 ```
+
+## TODO
+
+- Output matrix from FCM
+- More tests

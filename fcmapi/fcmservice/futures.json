@@ -1,0 +1,373 @@
+{
+    "py/object": "fcmlib.fcm.FCM",
+    "Finance": {
+        "py/object": "fcmlib.fcm.Concept",
+        "name": "Finance",
+        "newValue": 0.0,
+        "value": 0.0,
+        "error": 0,
+        "newError": 0,
+        "relation": null,
+        "inputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        },
+        "outputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        }
+    },
+    "Economy": {
+        "py/object": "fcmlib.fcm.Concept",
+        "name": "Economy",
+        "newValue": 0.0,
+        "value": 0.0,
+        "error": 0,
+        "newError": 0,
+        "relation": null,
+        "inputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        },
+        "outputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        }
+    },
+    "Government": {
+        "py/object": "fcmlib.fcm.Concept",
+        "name": "Government",
+        "newValue": 0.0,
+        "value": 0.0,
+        "error": 0,
+        "newError": 0,
+        "relation": null,
+        "inputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        },
+        "outputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        }
+    },
+    "Forecasting": {
+        "py/object": "fcmlib.fcm.Concept",
+        "name": "Forecasting",
+        "newValue": 0.0,
+        "value": 0.0,
+        "error": 0,
+        "newError": 0,
+        "relation": null,
+        "inputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        },
+        "outputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        }
+    },
+    "Society": {
+        "py/object": "fcmlib.fcm.Concept",
+        "name": "Society",
+        "newValue": 0.0,
+        "value": 0.0,
+        "error": 0,
+        "newError": 0,
+        "relation": null,
+        "inputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        },
+        "outputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        }
+    },
+    "Business": {
+        "py/object": "fcmlib.fcm.Concept",
+        "name": "Business",
+        "newValue": 0.0,
+        "value": 0.0,
+        "error": 0,
+        "newError": 0,
+        "relation": null,
+        "inputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        },
+        "outputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        }
+    },
+    "Technical Management": {
+        "py/object": "fcmlib.fcm.Concept",
+        "name": "Technical Management",
+        "newValue": 0.0,
+        "value": 0.0,
+        "error": 0,
+        "newError": 0,
+        "relation": null,
+        "inputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        },
+        "outputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        }
+    },
+    "Technology": {
+        "py/object": "fcmlib.fcm.Concept",
+        "name": "Technology",
+        "newValue": 0.0,
+        "value": 0.0,
+        "error": 0,
+        "newError": 0,
+        "relation": null,
+        "inputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        },
+        "outputMF": {
+            "py/object": "fcmlib.functions.piecewiselinear.PiecewiseLinear",
+            "piece": []
+        }
+    },
+    "__dict__": {
+        "config": {
+            "py/object": "fcmlib.config.Config",
+            "defaultRelation": {
+                "py/type": "fcmlib.relations.simplesigmoid.RSimpleSigmoid"
+            },
+            "defaultInputMF": {
+                "py/type": "fcmlib.functions.piecewiselinear.PiecewiseLinear"
+            },
+            "defaultOutputMF": {
+                "py/type": "fcmlib.functions.piecewiselinear.PiecewiseLinear"
+            },
+            "relations": {
+                "py/repr": "fcmlib.relations/fcmlib.relations"
+            },
+            "functions": {
+                "py/repr": "fcmlib.functions/fcmlib.functions"
+            }
+        },
+        "relations": {
+            "Finance": {
+                "py/object": "fcmlib.relations.simplesigmoid.RSimpleSigmoid",
+                "previous": [
+                    {
+                        "py/id": 16
+                    },
+                    {
+                        "py/id": 21
+                    },
+                    {
+                        "py/id": 31
+                    },
+                    {
+                        "py/id": 11
+                    }
+                ],
+                "weights": [
+                    3193.39,
+                    3155.21,
+                    3074.58,
+                    2927.97
+                ],
+                "previousnames": [
+                    "Forecasting",
+                    "Society",
+                    "Technical Management",
+                    "Government"
+                ]
+            },
+            "Economy": {
+                "py/object": "fcmlib.relations.simplesigmoid.RSimpleSigmoid",
+                "previous": [
+                    {
+                        "py/id": 1
+                    },
+                    {
+                        "py/id": 16
+                    },
+                    {
+                        "py/id": 31
+                    }
+                ],
+                "weights": [
+                    3257.85,
+                    3051.01,
+                    2933.97
+                ],
+                "previousnames": [
+                    "Finance",
+                    "Forecasting",
+                    "Technical Management"
+                ]
+            },
+            "Government": {
+                "py/object": "fcmlib.relations.simplesigmoid.RSimpleSigmoid",
+                "previous": [
+                    {
+                        "py/id": 36
+                    },
+                    {
+                        "py/id": 31
+                    },
+                    {
+                        "py/id": 26
+                    },
+                    {
+                        "py/id": 6
+                    }
+                ],
+                "weights": [
+                    3021.09,
+                    2986.51,
+                    2964.36,
+                    2875.53
+                ],
+                "previousnames": [
+                    "Technology",
+                    "Technical Management",
+                    "Business",
+                    "Economy"
+                ]
+            },
+            "Forecasting": {
+                "py/object": "fcmlib.relations.simplesigmoid.RSimpleSigmoid",
+                "previous": [
+                    {
+                        "py/id": 11
+                    },
+                    {
+                        "py/id": 36
+                    }
+                ],
+                "weights": [
+                    3195.66,
+                    3006.81
+                ],
+                "previousnames": [
+                    "Government",
+                    "Technology"
+                ]
+            },
+            "Society": {
+                "py/object": "fcmlib.relations.simplesigmoid.RSimpleSigmoid",
+                "previous": [
+                    {
+                        "py/id": 6
+                    },
+                    {
+                        "py/id": 16
+                    },
+                    {
+                        "py/id": 11
+                    },
+                    {
+                        "py/id": 36
+                    }
+                ],
+                "weights": [
+                    3072.84,
+                    3009.81,
+                    3001.75,
+                    2986.9
+                ],
+                "previousnames": [
+                    "Economy",
+                    "Forecasting",
+                    "Government",
+                    "Technology"
+                ]
+            },
+            "Business": {
+                "py/object": "fcmlib.relations.simplesigmoid.RSimpleSigmoid",
+                "previous": [
+                    {
+                        "py/id": 21
+                    },
+                    {
+                        "py/id": 16
+                    },
+                    {
+                        "py/id": 1
+                    },
+                    {
+                        "py/id": 6
+                    }
+                ],
+                "weights": [
+                    3095.54,
+                    2614.35,
+                    2614.18,
+                    2529.97
+                ],
+                "previousnames": [
+                    "Society",
+                    "Forecasting",
+                    "Finance",
+                    "Economy"
+                ]
+            },
+            "Technical Management": {
+                "py/object": "fcmlib.relations.simplesigmoid.RSimpleSigmoid",
+                "previous": [
+                    {
+                        "py/id": 16
+                    },
+                    {
+                        "py/id": 36
+                    },
+                    {
+                        "py/id": 21
+                    },
+                    {
+                        "py/id": 26
+                    }
+                ],
+                "weights": [
+                    3082.25,
+                    3067.15,
+                    2890.56,
+                    2508.46
+                ],
+                "previousnames": [
+                    "Forecasting",
+                    "Technology",
+                    "Society",
+                    "Business"
+                ]
+            },
+            "Technology": {
+                "py/object": "fcmlib.relations.simplesigmoid.RSimpleSigmoid",
+                "previous": [
+                    {
+                        "py/id": 1
+                    },
+                    {
+                        "py/id": 6
+                    },
+                    {
+                        "py/id": 26
+                    }
+                ],
+                "weights": [
+                    3078.43,
+                    3012.67,
+                    2698.23
+                ],
+                "previousnames": [
+                    "Finance",
+                    "Economy",
+                    "Business"
+                ]
+            }
+        }
+    }
+}
