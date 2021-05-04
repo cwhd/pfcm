@@ -74,9 +74,9 @@ class RNeural(IRelation):
         - None or raises Error exception
         """
         
-        if any(x.name == concept.name for x in self.previous):
-            raise Exception("Error - concept with name is already connected to the relation")
-        else:
+        if not any(x.name == concept.name for x in self.previous):
+            #raise Exception("Error - concept with name is already connected to the relation")
+        #else:
             self.previous.append(concept)
             self.weights[0] = np.hstack((self.weights[0],np.random.random((self.weights[0].shape[0],1))*2-1))
 

@@ -54,9 +54,9 @@ class RSimpleSigmoid(IRelation):
         - None or raises Error exception
         """
         
-        if any(x.name == concept.name for x in self.previous):
-            raise Exception("Error - concept with name is already connected to the relation")
-        else:
+        if not any(x.name == concept.name for x in self.previous):
+            #raise Exception("Error - concept with name is already connected to the relation")
+        #else:
             self.previous.append(concept)
             self.weights.append(1)
 
